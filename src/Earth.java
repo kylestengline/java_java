@@ -15,6 +15,9 @@ public class Earth {
     tom.name = "Tom Hammond";
     
     tom.speak();
+    tom.walk();
+    tom.work();
+    tom.eat();
 
   }
 }
