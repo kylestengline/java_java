@@ -11,6 +11,7 @@ public class Animal {
     this.height = height;
   }
 
+  //public void <method> is creating the behavior of a class
   public void things() {
     System.out.println("I am a " +type);
     System.out.println("I am " +height+ " feet tall");
