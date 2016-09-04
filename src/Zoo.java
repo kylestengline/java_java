@@ -3,22 +3,21 @@ public class Zoo {
   //Here is where we call the methods after creating our objects.
   public static void main(String[] args) {
     
-    Animal animal1 = new Animal("Bird", "blue", 4 ); 
-    Animal animal2 = new Animal("Dragon", "red", 25); 
-    Bird bird = new Bird();
+    Animal animal1 = new Animal(5,"Male", 4 ); 
+    Bird bird = new Bird(3, "F", 10);
+    Fish fish = new Fish(6, "F", 13);
 
-    animal1.things();
-    animal2.things();
+    animal1.eat();
+
+    fish.swim();
 
     bird.fly();
 
-    animal1.fly();
-    animal2.fly();
+    //the below methods are from the animal class
+    //we can do this now, because extends allows us to grab methods from the parent or animal class
+    bird.eat();
+    bird.sleep();
 
-    animal1.swim();
-    animal2.swim();
-
-    animal1.run();
-    animal2.run();
+    animal1.sleep();
   }
 }

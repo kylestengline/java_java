@@ -1,35 +1,22 @@
 public class Animal {
+  //animal class is referred to as the parent class
   
-  String type;
-  String color;
-  int height;
+  int age;
+  int weightInLbs;
+  String gender;
 
-  public Animal(String type, String color, int height) {
-    super();
-    this.type = type;
-    this.color = color;
-    this.height = height;
+  public Animal(int age,  String gender, int weightInLbs) {
+    this.gender = gender;
+    this.weightInLbs = weightInLbs;
+    this.age = age;
   }
 
   //public void <method> is creating the behavior of a class
-  public void things() {
-    System.out.println("I am a " +type);
-    System.out.println("I am " +height+ " feet tall");
-    System.out.println("I am " +color);
+  public void eat() {
+    System.out.println("eating...") ;
   }
 
-  public void fly() {
-    System.out.println("I am a " +type);
-    System.out.println("flying");
-  }
-
-  public void swim() {
-    System.out.println("I am a " +type);
-    System.out.println("swimming");
-  }
-  
-  public void run() {
-    System.out.println("I am a " +type);
-    System.out.println("running");
+  public void sleep() {
+    System.out.println("sleeping...");
   }
 }
