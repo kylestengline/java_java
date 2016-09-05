@@ -54,3 +54,8 @@ work. AKA The main method.
   - Instance variables hold the address of the object.
 ![Variables](../img/third.png)
 
+## Interface
+1. Interface is a contract.
+2. Any class that implements that interface the interface wants that class to promise that it will implement that method
+3. Remeber: A class can only extend one other class, which means it can only have on parent
+4. You will only ever have one parent class

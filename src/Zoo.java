@@ -6,12 +6,18 @@ public class Zoo {
     Animal animal1 = new Animal(5,"Male", 4 ); 
     Bird bird = new Bird(3, "F", 10);
     Fish fish = new Fish(6, "F", 13);
+    
+
+//    Chicken chick1 = new Chicken(1, "M", 7);
+
+    Sparrow sparrow = new Sparrow(4, "M", 20);
+    sparrow.fly();
 
     animal1.eat();
 
     fish.swim();
 
-    bird.fly();
+//    bird.fly();
 
     //the below methods are from the animal class
     //we can do this now, because extends allows us to grab methods from the parent or animal class
