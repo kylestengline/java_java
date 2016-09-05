@@ -1,5 +1,6 @@
-public class Animal {
+public abstract class Animal {
   //animal class is referred to as the parent class
+  //any class that extends this class is going to need the move method implemented
   
   int age;
   int weightInLbs;
@@ -19,4 +20,7 @@ public class Animal {
   public void sleep() {
     System.out.println("sleeping...");
   }
+
+  public abstract void move();
+    
 }

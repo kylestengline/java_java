@@ -2,19 +2,19 @@
 - We have a list of instructions. We put these instructions into methods after we break it down. 
 - We call all of this methods in our main method.
 
-####Class 
+##Class 
 1. Place where you can define your methods. 
 2. Container of methods.
 3. Method is a container of instructions in which I program will perform
 
-###Constructor 
+##Constructor 
 1. Used to construct your program
 
-###Objects
+##Objects
 1. We use constructor to construct objects of a class
 2. Objects are a runtime concept. Don't exist until app runs
 
-###Java Behind the Scenes
+##Java Behind the Scenes
 Everything in java should be wrapped in named blocks, or methods. 
 These would be the instructions for the computer. Methods are what does all the
 work. AKA The main method.
@@ -57,5 +57,12 @@ work. AKA The main method.
 ## Interface
 1. Interface is a contract.
 2. Any class that implements that interface the interface wants that class to promise that it will implement that method
-3. Remeber: A class can only extend one other class, which means it can only have on parent
+3. Remeber: A class can only extend one other class, which means it can only have one parent
 4. You will only ever have one parent class
+
+##Abstract Classes
+1. A regualr class with metrics, methods, etc. However, it has abstract methods
+   in it.
+2. Abstract class can only be extended. It cannot instantiate an instance of an abstract class.
+3. It is only meant to be a parent of another class.
+4. You cannont create an instance of an abstract class.

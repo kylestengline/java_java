@@ -1,4 +1,4 @@
-public class Bird extends Animal {
+public class Bird extends Animal{
   //bird is now a child class of animal. The animal is also referred to as the super class
   //bird class is a sub-class, containing sub functionality
   //it inherits the methods from the animal class
@@ -9,6 +9,9 @@ public class Bird extends Animal {
   }
   //in the above we're creating the bird class so that it can be referenced in the animal class
   
+  public void move(){
+    System.out.println("flapping wings...");
+  }
   
 
 }
