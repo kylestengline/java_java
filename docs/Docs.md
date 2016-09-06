@@ -66,3 +66,9 @@ work. AKA The main method.
 2. Abstract class can only be extended. It cannot instantiate an instance of an abstract class.
 3. It is only meant to be a parent of another class.
 4. You cannont create an instance of an abstract class.
+
+## Objects, Messages, Dependencies
+![Objects](../img/fourth.png)
+![Objects](../img/fifth.png)
+![Objects](../img/sixth.png)
+
