@@ -1,5 +1,9 @@
 package clients;
+
+import domainDao.EmployeeDAO;
+import domain.Employee;
 import reporting.EmployeeReportFormatter;
+import reporting.FormatType;
 
 public class ClientModule {
 
