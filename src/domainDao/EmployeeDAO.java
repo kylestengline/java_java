@@ -1,4 +1,4 @@
-package domain.dao;
+package domainDao;
 
 import domain.Employee;
 
