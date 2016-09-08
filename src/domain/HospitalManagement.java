@@ -2,25 +2,10 @@ package domain;
 
 public class HospitalManagement {
 
-  //Nurses
-  private void checkVitalSigns(){
-    System.out.println("Checking vitals");
-  }
-
-  private void drawBlood(){
-    System.out.println("Drawing blood");
-  }
-
-  private void cleanPatientArea(){
-    System.out.println("Cleaning...");
-  }
-
-  //Doctors
-  private void prescribeMedicine(){
-    System.out.println("Prescirbe medicine");
-  }
-
-  private void diagnosePatients(){
-    System.out.println("Diagnose Patient");
-  }
+  //instead of having if statements, we can now call the abstract method performDuties from employee class and the logic for nurse or doctor will already be in place.
+  public void callUpon(Employee employee) {
+    employee.performDuties();
+  } 
 }
+
+//now hospital management has a lot less responsibility. Now we can add more employees and give them their respective duties inside their own class.

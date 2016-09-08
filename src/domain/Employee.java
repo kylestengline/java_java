@@ -1,6 +1,7 @@
 package domain; 
-public class Employee {
-  
+abstract public class Employee {
+//to still have the ability to call upon any employee object to do their respective work we make employee an abstract class and create a method for this as well.  
+
   private int id;
   private String name;
   private String department;
@@ -15,6 +16,9 @@ public class Employee {
     this.working = working;
   }
 
+  public abstract void performDuties();
+
+  @Override
   public String toString(){
     return "Employee [ id=" + id + ", name=" + name + ", department=" 
       + department + ", working=" + working + "]";
