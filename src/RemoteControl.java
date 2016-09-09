@@ -23,6 +23,7 @@ abstract public class RemoteControl {
     System.out.println("Turning device off"); 
   }
 
-  public abstract void connectToDevice(RemoteControl remoteControl);
+//  public abstract void connectToDevice(RemoteControl remoteControl);
+//  not sure if I need this, because I have an interface method. Also not sure if interface is the best way to go about this.
 
 }
