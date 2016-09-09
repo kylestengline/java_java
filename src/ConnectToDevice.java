@@ -1,5 +1,5 @@
 public interface ConnectToDevice {
 
-  public void connectToDevice(RemoteControl remoteControl);
+  public abstract void connectToDevice(RemoteControl remoteControl);
 
 }

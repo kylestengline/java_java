@@ -1,4 +1,4 @@
-abstract public class RemoteControl {
+public class RemoteControl implements ConnectToDevice {
   
   Boolean connectToProjector;
   Boolean connectToTV;
@@ -12,7 +12,7 @@ abstract public class RemoteControl {
   }
 
   public static void connectDevice(){
-    System.out.println("Connectiong to device...");
+    connectToDevice(remoteControl);
   }
 
   public static void turnOn(){
@@ -23,7 +23,10 @@ abstract public class RemoteControl {
     System.out.println("Turning device off"); 
   }
 
-//  public abstract void connectToDevice(RemoteControl remoteControl);
-//  not sure if I need this, because I have an interface method. Also not sure if interface is the best way to go about this.
+  RemoteControl.connectDevice(projector);
+  //not working ^. May be calling it wrong
 
 }
+//  public abstract void connectToDevice();
+//  not sure if I need this, because I have an interface method. Also not sure if interface is the best way to go about this.
+

@@ -16,9 +16,4 @@ public class Projector extends RemoteControl {
   public void project() {
     System.out.println("Projecting");
   }
-
-  public void connectToDevice(){
-    project();
-  } 
-
 }
