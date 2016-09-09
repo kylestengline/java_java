@@ -5,6 +5,14 @@ public class SurroundSoundSystem extends RemoteControl {
     System.out.println("Connected to Surround Sound System...");
   }
 
+  public void surroundSystemOn(){
+    System.out.println("Projector powering on...");
+  }
+
+  public void surroundSystemOff(){
+    System.out.println("Projector powering off...");
+  }
+
   public void sound() {
     System.out.println("*Loud Noises*");
   }

@@ -5,6 +5,14 @@ public class TV extends RemoteControl {
     System.out.println("Connected to TV...");
   }
 
+  public void tvOn(){
+    System.out.println("TV powering on...");
+  }
+
+  public void tvOff(){
+    System.out.println("TV powering off...");
+  }
+
   public void watch() {
     System.out.println("Shameless is playing...");
   }

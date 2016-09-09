@@ -5,6 +5,14 @@ public class Projector extends RemoteControl {
     System.out.println("Connected to projector");
   }
 
+  public void projectorOff(){
+    System.out.println("Projector powering off...");
+  }
+
+  public void projectorOn(){
+    System.out.println("Projector powering on...");
+  }
+
   public void project() {
     System.out.println("Projecting");
   }
