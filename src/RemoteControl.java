@@ -1,32 +1,28 @@
-public class RemoteControl implements ConnectToDevice {
+public class RemoteControl {
+
+  private Device device = null;
+  private static final RemoteControl INSTANCE = new RemoteControl();
   
-  Boolean connectToProjector;
-  Boolean connectToTV;
-  Boolean connectToSSS;
-  
-  public RemoteControl(Boolean connectToProjector, Boolean connectToTV, Boolean connectToSSS){
-    super();
-    this.connectToProjector = connectToProjector;
-    this.connectToTV = connectToTV;
-    this.connectToSSS = connectToSSS;
+  private RemoteControl(){
   }
 
-  public static void connectDevice(){
-    connectToDevice(remoteControl);
+  public static RemoteControl getInstance(){
+    return INSTANCE;
   }
 
-  public static void turnOn(){
-    System.out.println("Turning device on"); 
+  public void connectToDevice(Device aDevice){
+    this.device = aDevice;
+    System.out.println("Connected to " + device); 
   }
 
-  public static void turnOff(){
-    System.out.println("Turning device off"); 
+  public void deviceOn(){
+    System.out.println("Turning device on...");   
+    device.turnOn();
   }
 
-  RemoteControl.connectDevice(projector);
-  //not working ^. May be calling it wrong
+  public void deviceOff(){
+    System.out.println("Turning device off..");
+    device.turnOff();
+  }
 
 }
-//  public abstract void connectToDevice();
-//  not sure if I need this, because I have an interface method. Also not sure if interface is the best way to go about this.
-

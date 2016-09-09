@@ -1,24 +1,25 @@
-public class SurroundSoundSystem extends RemoteControl {
+public class SurroundSoundSystem implements Device {
 
-  public SurroundSoundSystem(Boolean connectToProjector, Boolean connectToTV, Boolean connectToSSS){
-    super(connectToProjector, connectToTV, connectToSSS);
-    System.out.println("Connected to Surround Sound System...");
+  public void turnOn(){
+    switchToFavoriteCD();
+    increaseVolume();
+    System.out.println("Sound system has been turned on");
   }
 
-  public void surroundSystemOn(){
-    System.out.println("Projector powering on...");
+  public void turnOff(){
+    lowerVolume();
+    System.out.println("Sound system has been turned off");
   }
 
-  public void surroundSystemOff(){
-    System.out.println("Projector powering off...");
+  private void increaseVolume(){
+    System.out.println("Volume has increased...");
   }
 
-  public void sound() {
-    System.out.println("*Loud Noises*");
+  private void switchToFavoriteCD(){
+    System.out.println("I'm gonna crawl..now playing...");
   }
 
-  public void connectToDevice(){
-    sound();
-  } 
-
+  private void lowerVolume(){
+    System.out.println("Lowering surround sound volume before closing system");
+  }
 }

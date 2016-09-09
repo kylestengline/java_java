@@ -1,24 +1,20 @@
-public class TV extends RemoteControl {
+public class TV implements Device{
 
-  public TV(Boolean connectToProjector, Boolean connectToTV, Boolean connectToSSS){
-    super(connectToProjector, connectToTV, connectToSSS);
-    System.out.println("Connected to TV...");
+  public void turnOn(){
+    SwitchToFavoriteChannel();
+    System.out.println("TV has been turned on");
   }
 
-  public void tvOn(){
-    System.out.println("TV powering on...");
+  public void turnOff(){
+    tvOff();
+    System.out.println("TV has been turned off");
   }
 
-  public void tvOff(){
-    System.out.println("TV powering off...");
+  private void SwitchToFavoriteChannel(){
+    System.out.println("Switched to your favorite Channel");
   }
 
-  public void watch() {
-    System.out.println("Shameless is playing...");
+  private void tvOff(){
+    System.out.println("TV powering off..");
   }
-
-  public void connectToDevice(){
-    watch();
-  } 
-
 }

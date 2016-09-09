@@ -1,19 +1,24 @@
-public class Projector extends RemoteControl {
-
-  public Projector(Boolean connectToProjector, Boolean connectToTV, Boolean connectToSSS){
-    super(connectToProjector, connectToTV, connectToSSS);
-    System.out.println("Connected to projector");
+public class Projector implements Device {
+  
+  public void turnOn(){
+    pullDownProjectorScreen();
+    System.out.println("Projector has been turned on");
   }
 
-  public void projectorOff(){
-    System.out.println("Projector powering off...");
+  public void turnOff(){
+    pullUpProjectorScreen();
+    System.out.println("Projector has been turned off");
   }
 
-  public void projectorOn(){
-    System.out.println("Projector powering on...");
+  public void pullDownProjectorScreen(){
+    System.out.println("Screen has been lowered for viewing");
   }
 
-  public void project() {
-    System.out.println("Projecting");
+  public void pullUpProjectorScreen(){
+    System.out.println("Screen has been raised");
+  }
+
+  public String toString(){
+    return "Projector";
   }
 }
