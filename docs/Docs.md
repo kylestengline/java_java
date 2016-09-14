@@ -72,8 +72,13 @@ work. AKA The main method.
 ![Objects](../img/fifth.png)
 ![Objects](../img/sixth.png)
 
-## DIP
+## Dependency Inversion Principle 
 1. In UML diagrams, italics indicates methods
 2. The hashtag indicates that the methods are of protected scope.
 3. We use this when only sub-classes have visibility to the methods.
 ![UML](../img/seventh.png)
+![DIP](../img/dip.png)
+
+## Package Design
+1. Packages that are related should be put together.
+2. When we isolate the classes into seperate packages we no longer have access to the assembleDevice(), store, or test because these methods are protected or have protected scope.
