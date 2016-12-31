@@ -31,7 +31,6 @@ work. AKA The main method.
   - You can further invoke other methods within ``` doWork(); ``` called ``` doMore(); ```. This
     now gets added to the stack on top of ``` doWork(); ```
   - Once the methods are finished running or completed, they are removed from the stack. Therefore once ``` doMore(); ``` is complete it is removed and so on. Eventually, once the application is finished running the main method will be popped off of the stack.
-
 ![Stack](../img/first.png)
 
 3. Heap - created when the JVM starts up and may increase or decrease in size while the application runs. When the heap becomes full, garbage is collected. During the garbage collection, objects that are no longer used are cleared, thus making space for new objects.
@@ -44,7 +43,6 @@ work. AKA The main method.
     - Garbage Collection
     - If the above happens then we have lost connection with the old Car object.
     - Garbage Collection is a process that looks for objects not being referenced and then deletes/removes them.
-
 ![Heap](../img/second.png)
 
 4. Reference Variables
